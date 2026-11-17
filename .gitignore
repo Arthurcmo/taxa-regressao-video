@@ -1,0 +1,44 @@
+# vídeo do ensaio e quadros tirados dele
+*.mp4
+*.MP4
+*.mov
+*.avi
+*.gif
+video/
+frames/
+
+# pesos das redes e caches recriados a partir do vídeo
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.npy
+_tmp/*
+!_tmp/*.json
+
+# ambiente Python
+.venv/
+venv*/
+__pycache__/
+*.pyc
+
+# dados do ensaio (vídeo, registro, marcações e resultados) não entram no repositório
+caso_polietileno_2026-08-22/configuracao_pe.json
+caso_polietileno_2026-08-22/dados_oxidante/
+caso_polietileno_2026-08-22/resultados/
+caso_polietileno_2026-08-22/sessao_*/
+caso_polietileno_2026-08-22/experimento_*/
+caso_polietileno_2026-08-22/run_*/
+caso_polietileno_2026-08-22/figuras/
+figuras_tg2/
+
+# saídas das redes e das análises; só os lançadores entram
+experimento_recompensa_lei_2026-11-06/*
+!experimento_recompensa_lei_2026-11-06/sem_marcacao_v4/
+experimento_recompensa_lei_2026-11-06/sem_marcacao_v4/*
+!experimento_recompensa_lei_2026-11-06/sem_marcacao_v4/rodar_v4.sh
+experimento_metade_marcacoes_2026-11-16/*
+!experimento_metade_marcacoes_2026-11-16/rodar.sh
+
+.DS_Store

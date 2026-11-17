@@ -1,0 +1,24 @@
+{
+ "_ajuda": "Copie este arquivo para configuracao_pe.json, na mesma pasta, e troque cada null pelo valor do seu ensaio. O README explica cada campo. Caminhos são relativos a esta pasta.",
+ "ensaio": {
+  "video": "video/meu_ensaio.mp4",
+  "fps_camera": null,
+  "quadros_por_amostra": 8,
+  "roi": [null, null, null, null],
+  "mm_por_px": null,
+  "largura_porta_mm": null,
+  "fator_tempo_real": 1.0,
+  "amostra_ignicao": null,
+  "amostra_inicio_medida": null,
+  "amostra_fim_chama": null,
+  "janela_analise_s": [null, null],
+  "blocos_teste": {"B1": [null, null], "B2": [null, null]},
+  "marcacoes": "resultados/revisao_humana/perfis/MEU_PERFIL/guia.csv",
+  "registro_vazao": {
+   "vazao_csv": "dados_oxidante/vazao_oxidante.csv",
+   "canais_csv": "dados_oxidante/canais.csv",
+   "t_ignicao_s": null,
+   "densidade_oxidante_g_ml": null
+  }
+ }
+}

@@ -1,0 +1,57 @@
+MARCADOR
+
+Programa para marcar à mão as duas faces do grão nos quadros do vídeo. As marcações
+servem de referência para avaliar os métodos e de rótulos para treinar as redes.
+
+Antes de abrir
+  - Preencha caso_polietileno_2026-08-22/configuracao_pe.json (veja o README).
+  - Rode codigo/ler_contador.py e codigo/extrair_cubo.py uma vez, para o
+    marcador ter os quadros do vídeo.
+  - Crie uma sessão: uma pasta caso_polietileno_2026-08-22/sessao_<nome>/ com um
+    quadros.json, a lista de quadros e faces a marcar (formato no README).
+
+Como abrir
+  Clique duas vezes em "Abrir marcador.command", ou rode
+  python MARCADOR/abrir_marcador.py.
+  (Na primeira vez o macOS pode perguntar se pode abrir: clique em Abrir.
+   Se ele bloquear, clique com o botão direito > Abrir.)
+
+Na janela que aparece
+  1. Sessão: a lista de quadros a marcar. "outra pasta…" escolhe qualquer
+     pasta que tenha um quadros.json.
+  2. Perfil: onde as marcações ficam salvas.
+     - "(novo perfil vazio)" + um nome: começa do zero.
+     - um perfil da lista: continua de onde parou (a sessão dele é escolhida sozinha).
+  3. ABRIR MARCADOR.
+
+Dentro do marcador
+  PRÓXIMO PEDIDO leva ao quadro e diz a face; SALVAR (⌘S) grava o perfil em
+  caso_polietileno_2026-08-22/resultados/revisao_humana/perfis/.
+  O tempo mostrado é o tempo marcado pela câmera. No alto da imagem aparece o
+  tempo gravado pela câmera, recortado do quadro original.
+  Fuligem não é superfície: marque a borda do sólido.
+  Duas marcações no mesmo quadro: a tecla m (ou o botão "marcação") troca entre
+  A e B. Grupo A em verde e grupo B em azul, sempre os dois na tela; clicar ou
+  apagar só mexe no ativo. Os quadros anterior e seguinte também aparecem, claro
+  para o anterior e escuro para o seguinte.
+  Para trazer marcações antigas: na janela de abertura escolha "(novo perfil
+  vazio)" e, no item 3, o perfil antigo. Elas entram no grupo A do perfil novo, e o
+  perfil de origem não muda.
+
+Gráficos (tecla g)
+  Ficam numa janela ao lado e se refazem a cada clique. Só entram os quadros
+  marcados nas duas faces, e só a marcação ativa:
+    1. altura média da porta no grão inteiro e em cada metade;
+    2. taxa em cada intervalo;
+    3. taxa média desde o primeiro quadro marcado;
+    4. taxa por fluxo mássico de oxidante.
+  Intervalos com menos de 5 s ficam fora dos gráficos de taxa por intervalo,
+  porque seriam só erro de clique.
+
+Se o programa fechar sem salvar
+  Abra o mesmo perfil de novo. Se a cópia de segurança tiver marcações feitas depois
+  do último SALVAR, o programa pergunta se quer recuperá-las. Responda sim e aperte
+  SALVAR. Se responder não, a cópia não se perde: fica em
+  caso_polietileno_2026-08-22/resultados/revisao_humana/reservas_antigas.
+  Prefira abrir pelo "Abrir marcador.command" (Terminal do macOS): fechar o
+  terminal em que o programa roda também fecha o programa, sem aviso.
