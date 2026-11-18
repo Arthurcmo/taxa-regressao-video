@@ -131,4 +131,4 @@ Os outros arquivos de `codigo/` são módulos auxiliares que os da tabela import
 
 ## Origem
 
-O código foi desenvolvido num Trabalho de Graduação do Instituto Tecnológico de Aeronáutica (ITA), em 2026, com orientação do Prof. Dr. Leonardo Henrique Gouvêa.
+O código foi desenvolvido por Arthur Cardozo Munhoz de Oliveira no Trabalho de Graduação do Instituto Tecnológico de Aeronáutica (ITA), em 2026, com orientação do Prof. Dr. Leonardo Henrique Gouvêa.
